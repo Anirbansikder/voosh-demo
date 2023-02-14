@@ -261,3 +261,4 @@ Content-Type: application/json
 
 ## Sample UI to show orders placed by user
 
+<img src="./uploads/sample.png">
