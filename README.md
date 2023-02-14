@@ -31,7 +31,7 @@ POST /add-user HTTP/1.1
 Content-Type: application/json
 {
     "name": "Anirban",
-    "phoneNumber": "7365082177",
+    "phoneNumber": "1234567890",
     "password": "*********"
 }
 ```
@@ -41,7 +41,7 @@ Content-Type: application/json
 {
     "message": "Successfull SignUp",
     "user_id": "63eb0fcdb53b1d2c4d45ede2",
-    "phoneNumber": "7365082177",
+    "phoneNumber": "1234567890",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5pcmJhbiIsInBob25lTnVtYmVyIjo3MzY1MDgyMTc3LCJfaWQiOiI2M2ViMGZjZGI1M2IxZDJjNGQ0NWVkZTIiLCJpYXQiOjE2NzYzNDkzOTAsImV4cCI6MTY3NjQzNTc5MH0.bBdSBM-x-2S-1j4ZqmIEasV8kLLt-oF7OJWPyL0P7OU"
 }
 ```
@@ -77,7 +77,7 @@ If the user Doesnot exist or the password of the given user is wrong then `Usern
 POST /login-user HTTP/1.1
 Content-Type: application/json
 {
-    "phoneNumber": "7365082177",
+    "phoneNumber": "1234567890",
     "password": "*********"
 }
 ```
@@ -137,7 +137,7 @@ POST /add-order HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 Content-Type: application/json
 {
-    "phoneNumber": "7365082177",
+    "phoneNumber": "1234567890",
     "user_id": "63eb0fcdb53b1d2c4d45ede2",
     "item" : "burger",
     "subTotal" : 2
@@ -252,7 +252,7 @@ Content-Type: application/json
 ## Example Response
 ```
 {
-    "phoneNumber": 7365082177,
+    "phoneNumber": 1234567890,
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5pcmJhbiIsInBob25lTnVtYmVyIjo3MzY1MDgyMTc3LCJfaWQiOiI2M2VhN2VmYTk5YzgxOWM1ZDU5Y2RkN2UiLCJpYXQiOjE2NzYzMTIzMjIsImV4cCI6MTY3NjM5ODcyMn0.dvrYNY8OVcBuUq7DUVMaK9ViO-qNHbqypb4Zpj7ocX8",
     "user_id": "63ea7efa99c819c5d59cdd7e",
     "message": "Successfully Validated"
@@ -261,4 +261,4 @@ Content-Type: application/json
 
 ## Sample UI to show orders placed by user
 
-<img src="/uploads/sample.png">
+<img src="uploads/sample.png">
