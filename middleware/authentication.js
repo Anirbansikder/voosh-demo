@@ -11,7 +11,7 @@ const authenticate = (req,res,next) => {
         jwt.verify(token, process.env.JWT_SECRET, function(err, user) {
             if (err) {
                 return res.json({
-                    message: 'Please register Log in using a valid email to submit posts'
+                    message: 'Please Login to add/view order'
                 });
             } else {
                 next();

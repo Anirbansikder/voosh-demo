@@ -8,7 +8,7 @@ const Orders = () => {
     const [items,setItems] = useState([]);
     const [loading,setLoading] = useState(false);
     useEffect(() => {
-        axios.get(`/get-order?user_id=${localStorage.getItem('userId')}`,{
+        axios.get(`http://localhost:5000/get-order?user_id=${localStorage.getItem('userId')}`,{
             headers : {
                 authorization : `Bearer ${localStorage.getItem('token')}`
             }

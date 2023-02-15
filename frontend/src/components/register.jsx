@@ -23,7 +23,7 @@ const Register = () => {
             return;
         }
         e.preventDefault();
-        const res = await axios.post("/add-user",{
+        const res = await axios.post("http://localhost:5000/add-user",{
             "name" : name,
             "phoneNumber" : phoneNumber,
             "password" : password,

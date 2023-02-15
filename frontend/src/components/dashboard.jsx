@@ -6,7 +6,7 @@ import './style.css'
 const Dashboard = () => {
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get('/getUserFromToken' , {
+        axios.get('http://localhost:5000/getUserFromToken' , {
             headers : {
                 authorization : `Bearer ${localStorage.getItem('token')}`
             }
@@ -22,7 +22,7 @@ const Dashboard = () => {
     const [item,setItem] = useState("");
     const [total,setTotal] = useState(0);
     const addOrder = (e) => {
-        axios.post("/add-order",{
+        axios.post("http://localhost:5000/add-order",{
             "phoneNumber" : localStorage.getItem('phoneNumber'),
             "user_id" : localStorage.getItem('userId'),
             "item" : item,
