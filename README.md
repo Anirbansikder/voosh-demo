@@ -262,3 +262,41 @@ Content-Type: application/json
 ## Sample UI to show orders placed by user
 
 <img src="uploads/sample.png">
+
+<hr>
+
+# Getting Started
+
+1. Clone the project from GitHub:
+
+```bash
+$ git clone https://github.com/Anirbansikder/voosh-demo.git
+```
+
+2. Install dependencies for the server and the client:
+
+``` bash
+$ cd voosh-demo
+$ npm install
+$ cd frontend
+$ npm install
+```
+
+3. Start the server:
+
+``` bash
+$ npm start
+```
+
+4. Start the client:
+
+``` bash
+$ cd frontend
+$ npm start
+```
+
+This will start the server on http://localhost:5000. The server will automatically restart whenever you make changes to the code.
+
+5. View the app in the browser:
+
+Open your web browser and navigate to http://localhost:3000 to view the running application.
